@@ -81,7 +81,6 @@ async function upcomingDrawEvents() {
         upcomingevent = currevent;
       } else {
         temp = currevent.date;
-        // To find the minimum date: locates the first upcoming currevent
         if (temp < startDate) {
           startDate = temp;
           upcomingevent = currevent;
@@ -91,5 +90,6 @@ async function upcomingDrawEvents() {
   }
   return upcomingevent;
 }
+
 
 module.exports = router;
