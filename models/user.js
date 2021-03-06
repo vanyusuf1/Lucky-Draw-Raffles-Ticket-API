@@ -13,10 +13,11 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  numberOfRaffleCoupons: {
+  luckydrawCoupons: {
     type: Number,
     required: false,
     default: 0,
+    max:5
   },
 });
 
